@@ -13,27 +13,29 @@ body {
 }
 
 .container {
+    position: relative;
     background-color: #e6f9ff;
     width: 70%;
     height: 100vh;
     margin: 0 auto;
     max-width: 800px;
-    padding: 0 1em;
+    padding: 1.5em 1em;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-    margin: 0 0 1em;
+    margin: 0 0 .5em;
 }
 
 p {
     max-width: 55ch;
+    line-height: 1.5em
 }
 
 img {
     height: 60vh;
-    margin-top: 2em;
+    margin: 1em 0;
 }
 
 /*-------
@@ -41,19 +43,21 @@ nav styles
 --------*/
 .nav,
 ul {
-    padding: 0;
+    padding: .75em 0em;
     margin: 0;
 }
 
 .nav {
     background-color: #e0ccff;
-    width: 25%;
-    position: fixed;
+    width: 0;
+    position: absolute;
     z-index: 1;
     right: 15%;
     top: 0;
     height: 100%;
-    display: none;
+    overflow-x: hidden;
+    visibility: hidden;
+    transition: all 250ms ease-in ;
 }
 
 .nav-list-item {
@@ -77,10 +81,14 @@ ul {
     color: white;
 }
 
+.open-menu {
+    position: absolute;
+    right: 5%;
+}
+
 .open-menu,
 .close-menu {
     width: 3%;
-    margin-left: auto;
     padding: 0.5em 1.5em 0 0;
 }
 
@@ -105,5 +113,6 @@ toggle styles
 }
 
 .active-nav {
-    display: block;
+    visibility: visible;
+    width: 25%;
 }

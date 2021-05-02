@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -9,12 +11,12 @@ html, body {
 
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 .container {
     position: relative;
-    background-color: #e6f9ff;
+    background-color: #C8D8EB;
     width: 70%;
     height: 100vh;
     margin: 0 auto;
@@ -26,11 +28,12 @@ body {
 
 h1 {
     margin: 0 0 .5em;
+    margin-right: 1.5em; 
 }
 
 p {
     max-width: 55ch;
-    line-height: 1.5em
+    line-height: 1.5em;
 }
 
 img {
@@ -43,12 +46,12 @@ nav styles
 --------*/
 .nav,
 ul {
-    padding: .75em 0em;
+    padding: 0em 0em;
     margin: 0;
 }
 
 .nav {
-    background-color: #e0ccff;
+    background-color: #7566A0;
     width: 0;
     position: absolute;
     z-index: 1;
@@ -64,11 +67,13 @@ ul {
     list-style-type: none;
     padding: 0.5em;
     margin: 0;
+    transition: 100ms;
+    font-weight: 700;
 }
 
 .nav-list-item:hover {
     cursor: pointer;
-    background-color: hotpink;
+    background-color: #C724B1;
 }
 
 .nav-link {
@@ -89,7 +94,7 @@ ul {
 .open-menu,
 .close-menu {
     width: 3%;
-    padding: 0.5em 1.5em 0 0;
+    padding: 0.5em 2em 0 0;
 }
 
 .close-menu {
